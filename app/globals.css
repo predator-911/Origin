@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-inter: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  --font-space-grotesk: "Avenir Next", "Segoe UI", -apple-system, BlinkMacSystemFont,
+    Roboto, sans-serif;
+  --font-jetbrains: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Menlo,
+    Consolas, monospace;
+}
+
+* {
+  border-color: theme("colors.base.border");
+}
+
+html,
+body {
+  background-color: #07080b;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #07080b;
+}
+::-webkit-scrollbar-thumb {
+  background: #24272f;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #34384280;
+}
+
+:focus-visible {
+  outline: 2px solid #6e5bff;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: theme("colors.ink.dim");
+}
+
+.section-shell {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-shell {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.bg-grid-overlay {
+  background-image: theme("backgroundImage.grid-faint");
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, #eaebf0 0%, #eaebf0 40%, #6e5bff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-glass {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(234, 235, 240, 0.08);
+  backdrop-filter: blur(14px);
+}
