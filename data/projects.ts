@@ -92,7 +92,7 @@ export const projects: Project[] = [
     impact:
       "Reduces hallucination rate and gives users traceable, source-grounded answers.",
     lessons:
-      "Retrieval quality is the ceiling on RAG performance — a better generator can't fix bad retrieval.",
+      "Retrieval quality is the ceiling on RAG performance, a better generator can't fix bad retrieval.",
     future: "Add citation highlighting and multi-hop retrieval for complex queries.",
     liveUrl: "https://huggingface.co/spaces/Predator911/LLMExpert",
     githubUrl: "https://github.com/predator-911",
@@ -132,7 +132,7 @@ export const projects: Project[] = [
     impact:
       "Gives smallholder-style operations a lightweight, accessible decision-support tool.",
     lessons:
-      "Domain-specific tools need domain-specific validation — general ML metrics aren't enough.",
+      "Domain-specific tools need domain-specific validation, general ML metrics aren't enough.",
     future: "Add region-specific climate data integration.",
     liveUrl: "https://huggingface.co/spaces/Predator911/NoriFarm",
     githubUrl: "https://github.com/predator-911",

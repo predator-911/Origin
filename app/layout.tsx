@@ -9,12 +9,12 @@ import Noise from "@/components/ui/Noise";
 // build or runtime, matching the "no external dependencies" requirement.
 
 export const metadata: Metadata = {
-  title: "Lakshya Kumar — AI Systems Engineer",
+  title: "Lakshya Kumar, AI Systems Engineer",
   description:
     "Building intelligent systems that solve real-world problems. AI, machine learning, generative AI, LLM evaluation, and cloud-deployed products by Lakshya Kumar.",
   metadataBase: new URL("https://lakshyakumar.dev"),
   openGraph: {
-    title: "Lakshya Kumar — AI Systems Engineer",
+    title: "Lakshya Kumar, AI Systems Engineer",
     description: "Building intelligent systems that solve real-world problems.",
     type: "website",
   },

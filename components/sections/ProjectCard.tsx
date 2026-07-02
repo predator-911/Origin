@@ -16,13 +16,19 @@ export default function ProjectCard({ project }: { project: Project }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5 }}
-      className="card-glass overflow-hidden rounded-2xl"
+      whileHover={{ y: -8, scale: 1.01 }}
+      onMouseMove={(event) => {
+        const rect = event.currentTarget.getBoundingClientRect();
+        event.currentTarget.style.setProperty("--x", `${event.clientX - rect.left}px`);
+        event.currentTarget.style.setProperty("--y", `${event.clientY - rect.top}px`);
+      }}
+      className="card-glass spotlight-card group overflow-hidden rounded-3xl"
     >
-      <div className="h-40 w-full">
+      <div className="h-48 w-full overflow-hidden">
         <ProjectCover id={project.id} accent={project.accent} />
       </div>
 
-      <div className="p-6">
+      <div className="relative p-6">
         <p className="eyebrow mb-2 text-ink-faint">{project.category}</p>
         <h3 className="font-display text-xl text-ink">{project.title}</h3>
         <p className="mt-3 text-sm leading-relaxed text-ink-dim">{project.problem}</p>
@@ -43,7 +49,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full bg-ink px-4 py-2 text-xs font-medium text-base transition-transform hover:scale-105"
+            className="inline-flex items-center gap-1.5 rounded-full bg-ink px-4 py-2 text-xs font-bold text-base transition-transform hover:scale-105"
           >
             Live Demo <ArrowUpRight size={12} />
           </a>

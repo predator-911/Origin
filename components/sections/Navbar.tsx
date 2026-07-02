@@ -20,17 +20,36 @@ const navItems = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("#top");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible) setActiveSection(`#${visible.target.id}`);
+      },
+      { rootMargin: "-35% 0px -55% 0px", threshold: [0.1, 0.35, 0.6] },
+    );
+    ["top", ...navItems.map((item) => item.href.slice(1))].forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+    return () => observer.disconnect();
   }, []);
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-base/80 backdrop-blur-md border-b border-base-border" : ""
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+        scrolled ? "border-b border-white/10 bg-base/72 shadow-[0_10px_50px_rgba(0,0,0,0.28)] backdrop-blur-2xl" : ""
       }`}
     >
       <nav className="section-shell flex h-16 items-center justify-between md:h-20">
@@ -46,7 +65,7 @@ export default function Navbar() {
             <li key={item.href}>
               <a
                 href={item.href}
-                className="eyebrow text-[0.68rem] text-ink-dim hover:text-ink transition-colors"
+                className={`eyebrow relative text-[0.68rem] transition-colors after:absolute after:-bottom-2 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-signal-violet after:transition-transform hover:text-ink hover:after:scale-x-100 ${activeSection === item.href ? "text-ink after:scale-x-100" : "text-ink-dim"}`}
               >
                 {item.label}
               </a>

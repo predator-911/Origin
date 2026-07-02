@@ -22,9 +22,9 @@ export default function AILab() {
       <div className="absolute inset-0 bg-grid-overlay bg-grid opacity-60" aria-hidden="true" />
       <div className="section-shell relative">
         <SectionHeading
-          eyebrow="03 — AI Lab"
+          eyebrow="03 / AI Lab"
           title="Live LLM & generative experiments."
-          description="Deployed, running systems — not slide-deck demos. Each one is a working endpoint you can open and test right now."
+          description="Deployed, running systems, not slide-deck demos. Each one is a working endpoint you can open and test right now."
         />
 
         <div className="grid gap-4 md:grid-cols-2">

@@ -14,9 +14,9 @@ export default function About() {
   return (
     <section id="about" className="section-shell py-28 md:py-36">
       <SectionHeading
-        eyebrow="01 — About"
+        eyebrow="01 / About"
         title="I design systems, not just models."
-        description="I work at the intersection of AI research and production engineering — turning open-ended problems into deployed systems that hold up under real usage, not just benchmark conditions."
+        description="I work at the intersection of AI research and production engineering, turning open-ended problems into deployed systems that hold up under real usage, not just benchmark conditions."
       />
 
       <div className="grid gap-14 md:grid-cols-12">
@@ -39,7 +39,7 @@ export default function About() {
             0.5% nationally, and I currently work as an AI evaluator building the
             rubric-driven systems that decide whether a model change is actually
             safe to ship. Before that, I built ML pipelines, NLP systems, and
-            deployment infrastructure across five other teams — each one a
+            deployment infrastructure across five other teams, each one a
             different domain, the same underlying discipline.
           </p>
         </motion.div>
