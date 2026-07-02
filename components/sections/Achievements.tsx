@@ -11,9 +11,9 @@ export default function Achievements() {
   return (
     <section id="achievements" className="section-shell py-28 md:py-36">
       <SectionHeading
-        eyebrow="07 — Achievements"
+        eyebrow="07 / Achievements"
         title="Programs worth the name-drop."
-        description="Selective, competitive programs across AI, business, and finance — each verifiable at the source."
+        description="Selective, competitive programs across AI, business, and finance, each verifiable at the source."
       />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

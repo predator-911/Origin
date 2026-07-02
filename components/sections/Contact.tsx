@@ -24,7 +24,7 @@ export default function Contact() {
         aria-hidden="true"
       />
       <div className="section-shell relative">
-        <p className="eyebrow mb-4">10 — Contact</p>
+        <p className="eyebrow mb-4">10 / Contact</p>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -24,7 +24,7 @@ export default function CertificationVault() {
   return (
     <section id="vault" className="section-shell py-28 md:py-36">
       <SectionHeading
-        eyebrow="08 — Certification Vault"
+        eyebrow="08 / Certification Vault"
         title="Every credential, one place."
         description="Search or filter by category. Every entry opens straight to its verification source."
       />

@@ -11,9 +11,9 @@ export default function Skills() {
   return (
     <section id="skills" className="section-shell py-28 md:py-36">
       <SectionHeading
-        eyebrow="06 — Skills"
+        eyebrow="06 / Skills"
         title="A stack built for the whole pipeline."
-        description="Hover a category to bring its tools forward. No arbitrary percentages — depth here is demonstrated in the projects and journey above, not scored out of ten."
+        description="Hover a category to bring its tools forward. No arbitrary percentages, depth here is demonstrated in the projects and journey above, not scored out of ten."
       />
 
       <div className="grid gap-3 md:grid-cols-2">

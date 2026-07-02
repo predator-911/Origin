@@ -18,9 +18,9 @@ export default function Projects() {
   return (
     <section id="projects" className="section-shell py-28 md:py-36">
       <SectionHeading
-        eyebrow="04 — Projects"
+        eyebrow="04 / Projects"
         title="Fifteen systems, fifteen problems."
-        description="From generative AI to classic structured-data machine learning — every project here is live and open to try."
+        description="From generative AI to classic structured-data machine learning, every project here is live and open to try."
       />
 
       <div className="mb-10 flex flex-wrap gap-2">

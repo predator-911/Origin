@@ -60,9 +60,9 @@ export default function GithubDashboard() {
   return (
     <section id="github" className="section-shell py-28 md:py-36">
       <SectionHeading
-        eyebrow="09 — GitHub"
+        eyebrow="09, GitHub"
         title="Pulled live from the source."
-        description="Fetched directly from the public GitHub API on load — no key, no server, no stale numbers."
+        description="Fetched directly from the public GitHub API on load, no key, no server, no stale numbers."
       />
 
       <div className="mb-8 flex flex-wrap items-center gap-4">
@@ -93,7 +93,7 @@ export default function GithubDashboard() {
       {status === "error" && (
         <div className="card-glass rounded-2xl p-8 text-center">
           <p className="text-sm text-ink-dim">
-            GitHub's public API rate-limited this request. View repositories directly
+            GitHub public API rate-limited this request. View repositories directly
             instead.
           </p>
           <a

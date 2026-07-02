@@ -20,7 +20,7 @@ export const experience: Experience[] = [
     id: "ethara-ai",
     company: "Ethara AI",
     role: "Generative AI Engineer",
-    period: "2025 — Present",
+    period: "2025 to Present",
     location: "Remote",
     mission:
       "Improve the reliability of LLM-powered products before they reach production by building rigorous, repeatable evaluation systems.",
@@ -32,13 +32,13 @@ export const experience: Experience[] = [
       "Cut review turnaround time and gave the team a shared, defensible standard for shipping model changes with confidence.",
     technologies: ["LLM Evaluation", "Python", "Prompt Engineering", "LangChain", "Pandas"],
     lessons:
-      "Good evaluation design matters more than any single model swap — the rubric is the product.",
+      "Good evaluation design matters more than any single model swap, the rubric is the product.",
   },
   {
     id: "celebal-technologies",
     company: "Celebal Technologies",
     role: "DevOps Engineer",
-    period: "2024 — 2025",
+    period: "2024 to 2025",
     location: "Remote",
     mission:
       "Reduce friction between development and deployment by automating build, test, and release pipelines for client projects.",
@@ -74,7 +74,7 @@ export const experience: Experience[] = [
     id: "cantilever",
     company: "CantiLever",
     role: "AI & NLP Intern",
-    period: "2023 — 2024",
+    period: "2023 to 2024",
     location: "Remote",
     mission:
       "Apply NLP techniques to extract structured signal from unstructured text for downstream products.",
@@ -104,13 +104,13 @@ export const experience: Experience[] = [
       "Gave the foundation an early-warning tool that helped prioritize outreach where it mattered most.",
     technologies: ["Python", "Machine Learning", "Data Analytics", "Visualization"],
     lessons:
-      "The best model is worthless if the people using it can't act on its output — usability is part of accuracy.",
+      "The best model is worthless if the people using it can't act on its output, usability is part of accuracy.",
   },
   {
     id: "adsmit-media",
     company: "ADSMIT MEDIA",
     role: "Finance & Data Analyst",
-    period: "2022 — 2023",
+    period: "2022 to 2023",
     location: "Remote",
     mission:
       "Bring analytical rigor to campaign spend and revenue reporting for a fast-moving media business.",
@@ -122,7 +122,7 @@ export const experience: Experience[] = [
       "Gave leadership a real-time view of campaign profitability, informing where budget was reallocated.",
     technologies: ["Excel", "SQL", "Power BI", "Financial Modeling", "Data Analytics"],
     lessons:
-      "Numbers only drive decisions when they're trustworthy and easy to act on — pipelines matter as much as formulas.",
+      "Numbers only drive decisions when they're trustworthy and easy to act on, pipelines matter as much as formulas.",
   },
   {
     id: "coincent-ai",

@@ -8,7 +8,7 @@ export default function Journey() {
   return (
     <section id="journey" className="section-shell py-28 md:py-36">
       <SectionHeading
-        eyebrow="02 — Journey"
+        eyebrow="02 / Journey"
         title="Every role, one build log."
         description="Reverse-chronological, treated as a deploy history: what the mission was, what broke, what shipped, and what it taught me."
       />
